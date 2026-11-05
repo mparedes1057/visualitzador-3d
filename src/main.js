@@ -103,7 +103,7 @@ controls.enablePan = true;
 
 const mtlLoader = new MTLLoader();
 
-mtlLoader.setPath('/model/');
+mtlLoader.setPath(import.meta.env.BASE_URL + '/model/');
 
 mtlLoader.load(
     'QuickMapleOptimized.mtl',
@@ -118,7 +118,7 @@ mtlLoader.load(
 
         objLoader.setMaterials(materials);
 
-        objLoader.setPath('/model/');
+        objLoader.setPath(import.meta.env.BASE_URL + '/model/');
 
         // Cargar modelo
         objLoader.load(

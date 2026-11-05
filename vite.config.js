@@ -1,3 +1,3 @@
 export default {
-    base: "/"
+    base: "/visualitzador-3d/"
 }
